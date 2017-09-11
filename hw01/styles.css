@@ -2,3 +2,9 @@ body {
   background-image: url("background.jpeg");
   background-size: cover;
 }
+
+#me {
+  content:url("me.jpeg");
+  height: 50%;
+  width: 50%;
+}
