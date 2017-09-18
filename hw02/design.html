@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark bg-dark justify-content-between">
+    <a class="navbar-brand" href="index.html">Blog?</a>
+  </nav>
   <div class="container">
     <div class="card bg-info mb-3">
       <div class="card-body">
@@ -28,14 +31,14 @@
           </li>
           <li class="list-group-item">As an existing user I should be able to log in to my account
             <ul>
-              <li>An existing user visits the home page. On the page they can enter their username and password and click a login button. THey will then be redirected to their personal homepage.
+              <li>An existing user visits the home page. On the page they can enter their username and password and click a login button. They will then be redirected to their personal homepage.
               </li>
             </ul>
           </li>
           <li class="list-group-item">As an existing user, I should be able to search for and follow other users
             <ul>
               <li>An existing user visits their homepage. On this page they use a search bar to type in either the name or username of a different user they are searching for. Upon clicking search the user is brought to a list of users matching the search
-                term, if any. The user is able to click "follow" to follow the activity of users in the list.
+                term, if any. The user is able to click on a user to see a detailed description of the user, and choose to follow messages of selected users.
               </li>
             </ul>
           </li>
@@ -60,17 +63,106 @@
         <ul class="list-group">
           <li class="list-group-item">Users
             <ul>
-              <li>Name</li>
-              <li>Email</li>
-              <li>Password</li>
+              <li>Data Fields
+                <ul>
+                  <li>Name</li>
+                  <li>Username</li>
+                  <li>Email</li>
+                  <li>Password</li>
+                  <li>List of followed members</li>
+                </ul>
+              </li>
+              <li>RESTful Routes
+                <ul>
+                  <li>Create
+                    <ul>
+                      <li>This route will occur after the New route. It will display the Show page for the new User with a message denoting that the User has been successfully created</li>
+                    </ul>
+                  </li>
+                  <li>Show
+                    <ul>
+                      <li>The Show page will be displayed, showing details of the selected user</li>
+                    </ul>
+                  </li>
+                  <li>Update
+                    <ul>
+                      <li>This route will occur after the Edit route. It will display the Show page for the update user denoting that the User has been successfully edited</li>
+                    </ul>
+                  </li>
+                  <li>Delete
+                    <ul>
+                      <li>This route will redirect to the Index page with a message denoting that the selected user has been deleted</li>
+                    </ul>
+                  </li>
+                  <li>Edit
+                    <ul>
+                      <li>This route will redirect to a form page where they can edit the details of their user</li>
+                    </ul>
+                  </li>
+                  <li>New
+                    <ul>
+                      <li>This route will redirect to a form page where a new user can be created</li>
+                    </ul>
+                  </li>
+                  <li>Index
+                    <ul>
+                      <li>A list of all existing users</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li class="list-group-item">Messages
-            <ul>
-              <li>Message Text</li>
-              <li>Date Posted</li>
-            </ul>
-          </li>
+            </li>
+            <li class="list-group-item">Messages
+              <ul>
+                <li>Data Fields
+                  <ul>
+                    <li>User</li>
+                    <li>Message Text</li>
+                    <li>Datetime Posted</li>
+                  </ul>
+                </li>
+                <li>RESTful Routes
+                  <ul>
+                    <li>Create
+                      <ul>
+                        <li>This route will occur after the New route. It will display the Show page for the new User with a message denoting that the new message has been posted</li>
+                      </ul>
+                    </li>
+                    <li>Show
+                      <ul>
+                        <li>The Show page will be displayed, showing details of the selected message</li>
+                      </ul>
+                    </li>
+                    <li>Update
+                      <ul>
+                        <li>This route will occur after the Edit route. It will display the Show page for the update user denoting that the message has been successfully edited</li>
+                      </ul>
+                    </li>
+                    <li>Delete
+                      <ul>
+                        <li>This route will redirect to the Index page with a message denoting that the selected message has been deleted</li>
+                      </ul>
+                    </li>
+                    <li>Edit
+                      <ul>
+                        <li>This route will redirect to a form page where they can edit the details of a message</li>
+                      </ul>
+                    </li>
+                    <li>New
+                      <ul>
+                        <li>This route will redirect to a form page where a new message can be created</li>
+                      </ul>
+                    </li>
+                    <li>Index
+                      <ul>
+                        <li>A list of all messages</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
 
         </ul>
       </div>
